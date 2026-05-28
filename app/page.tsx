@@ -5,17 +5,9 @@ export default function Home() {
     <main className="font-sans">
 
       {/* ── HEADER ── */}
-      <header style={{backgroundColor: '#87CEEB'}} className="py-5 px-8">
-        <div className="max-w-6xl mx-auto flex items-center justify-between">
-          <Image
-            src="/logo.png"
-            alt="Colibri Films Mauritius"
-            width={180}
-            height={101}
-            className="rounded-lg"
-            priority
-          />
-          <nav className="hidden md:flex gap-8 text-[#061a2b] font-medium text-sm uppercase tracking-widest">
+      <header style={{backgroundColor: '#87CEEB'}} className="py-4 px-8">
+        <div className="max-w-6xl mx-auto flex items-center justify-end">
+          <nav className="flex gap-8 text-[#061a2b] font-medium text-sm uppercase tracking-widest">
             <a href="#services" className="hover:opacity-60 transition-opacity">Services</a>
             <a href="#rebate"   className="hover:opacity-60 transition-opacity">Rebate</a>
             <a href="#contact"  className="hover:opacity-60 transition-opacity">Contact</a>
@@ -24,8 +16,18 @@ export default function Home() {
       </header>
 
       {/* ── HERO ── */}
-      <section style={{backgroundColor: '#061a2b'}} className="py-36 px-8 text-center">
+      <section style={{backgroundColor: '#061a2b'}} className="py-24 px-8 text-center">
         <div className="max-w-4xl mx-auto">
+          <div className="flex justify-center mb-10">
+            <Image
+              src="/logo.png"
+              alt="Colibri Films Mauritius"
+              width={320}
+              height={180}
+              className="rounded-xl shadow-2xl"
+              priority
+            />
+          </div>
           <p className="text-[#87CEEB] uppercase tracking-[0.3em] text-xs mb-8 font-light">
             Mauritius · Indian Ocean
           </p>
@@ -138,13 +140,22 @@ export default function Home() {
             the rebate — get in touch and we'll make it happen.
           </p>
           <a
-            href="mailto:info@colibrifilms.mu"
+            href="mailto:Alwyn@colibrifilms.mu"
             style={{backgroundColor: '#87CEEB', color: '#061a2b'}}
             className="inline-block px-10 py-4 text-sm font-bold uppercase tracking-widest rounded hover:opacity-85 transition-opacity mb-8"
           >
-            info@colibrifilms.mu
+            Alwyn@colibrifilms.mu
           </a>
-          <p className="text-white/25 text-sm">Flic en Flac, Mauritius · Indian Ocean</p>
+          <a
+            href="https://wa.me/23057390849"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center justify-center gap-2 text-white/50 hover:text-white/80 transition-colors text-sm mt-6"
+          >
+            <span>💬</span>
+            <span>WhatsApp: +230 5739 0849</span>
+          </a>
+          <p className="text-white/25 text-sm mt-4">Flic en Flac, Mauritius · Indian Ocean</p>
         </div>
       </section>
 
