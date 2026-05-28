@@ -36,8 +36,8 @@ export default function Home() {
             <span className="italic">International standards.</span>
           </h1>
           <p className="text-white/65 text-xl md:text-2xl font-light max-w-2xl mx-auto mb-14 leading-relaxed">
-            Your trusted production service partner for film, commercials and
-            branded content in Mauritius and the Indian Ocean region.
+            Your trusted production service partner for Film, Series, Reality Shows,
+            Commercials and Branded Content in Mauritius and the Indian Ocean region.
           </p>
           <a
             href="#contact"
